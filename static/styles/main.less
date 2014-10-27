@@ -1,0 +1,54 @@
+@import "../bower_components/normalize.css/normalize.css";
+@import "variables";
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('@{font_path}/bold/proximanova.woff') format('woff'), url('@{font_path}/bold/proximanova.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('@{font_path}/regular/proximanova.woff') format('woff'), url('@{font_path}/regular/proximanova.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('@{font_path}/light/proximanova.woff') format('woff'), url('@{font_path}/light/proximanova.ttf') format('truetype');
+  font-weight: 300;
+}
+
+.container {
+  color: @white;
+  font-size: 62.5%;
+  font-family: 'ProximaNova';
+}
+
+.about {
+  background-color: @dark_blue;
+  padding: 40px 0;
+  text-align: center;
+
+  .about__title {
+    text-transform: uppercase;
+    font-size: 5em;
+    margin: 0;
+  }
+
+  .about__subtitle {
+    font-size: 2.5em;
+    margin: 5px 0 35px;
+  }
+
+  .about__describe {
+    font-size: 1.8em;
+    font-weight: 300;
+    margin: 0;
+  }
+}
+
+.quotes {
+  background-color: @blue;
+  height: 200px;
+}
