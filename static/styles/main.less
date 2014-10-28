@@ -1,4 +1,5 @@
 @import "../bower_components/normalize.css/normalize.css";
+@import "../bower_components/bxslider-4/jquery.bxslider.css";
 @import "variables";
 
 @font-face {
@@ -19,6 +20,15 @@
   font-weight: 300;
 }
 
+@font-face {
+  font-family: 'ProximaNova Semi';
+  src: url('@{font_path}/semi-bold-italic/proximanova-semibold-webfont.ttf') format('truetype');
+}
+
+.center {
+  margin: 0 auto;
+}
+
 .container {
   color: @white;
   font-size: 62.5%;
@@ -27,7 +37,7 @@
 
 .about {
   background-color: @dark_blue;
-  padding: 40px 0;
+  padding: 40px 0 80px;
   text-align: center;
 
   .about__title {
@@ -49,6 +59,106 @@
 }
 
 .quotes {
+  font-family: 'ProximaNova Semi';
   background-color: @blue;
-  height: 200px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+
+  .quotes__header-bg {
+    background-color: @dark_blue;
+    height: 85px;
+    margin-top: 0;
+  }
+
+  .quote__image-container {
+    width: 260px;
+    height: 140px;
+  }
+
+  .quote__content {
+    width: 850px;
+    margin-top: 90px;
+
+    .quote__symbol_left, .quote__symbol_right {
+      width: 45px;
+      height: 44px;
+    }
+
+    .quote__symbol_left {
+      background: url('../images/quote-left.png') no-repeat;
+      float: left;
+    }
+
+    .quote__symbol_right {
+      background: url('../images/quote-right.png') no-repeat;
+      float: right;
+    }
+
+    .quote__text {
+      padding: 0 45px 0 35px;
+      clear: both;
+      font-size: 2.4em;
+      font-style: italic;
+    }
+  }
+
+  .quote__plus-btn {
+    background: url('../images/plus-btn.png') no-repeat;
+    width: 50px;
+    height: 32px;
+    margin-top: 35px;
+  }
+
+  .quote__author {
+    font-size: 1.6em;
+    margin: 35px 0;
+
+    .quote__author__name {
+      font-weight: bold;
+    }
+
+    .quote__author__position {
+      font-family: 'ProximaNova';
+    }
+  }
+
+  .bx-wrapper {
+    .bx-viewport {
+      border: none;
+      background: none;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    .bx-pager, .bx-controls-auto {
+      bottom: -10px;
+    }
+
+    .bx-pager.bx-default-pager {
+      a {
+        background-color: @dark_blue;
+
+        &.active {
+          background-color: @white;
+        }
+      }
+    }
+
+    .bx-prev, .bx-next {
+      width: 75px;
+      height: 100px;
+    }
+
+    .bx-prev {
+      left: 0;
+      background: url('../images/arrow-left.png') no-repeat;
+    }
+
+    .bx-next {
+      right: 0;
+      background: url('../images/arrow-right.png') no-repeat;
+    }
+  }
 }
