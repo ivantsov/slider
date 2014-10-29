@@ -1,3 +1,57 @@
-@media (max-width: 480px) {
-  
+.about {
+  padding: 20px 20px 55px;
+  text-align: left;
+
+  .about__title {
+    font-size: 2.1em;
+    font-weight: normal;
+  }
+
+  .about__subtitle-wrapper {
+    .about__subtitle {
+      font-size: 1.8em;
+      font-weight: 300;
+      margin-top: 20px;
+    }
+  }
+
+  .about__describe-wrapper {
+    .about__describe {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.quotes {
+  .quote__content {
+    padding: 0 20px;
+    text-align: left;
+
+    .quote__text {
+      padding: 20px 0 0;
+      font-size: 1.8em;
+    }
+  }
+
+  .quote__author {
+    font-size: 1.3em;
+    text-align: left;
+    padding: 0 20px;
+
+    &:before, &:after {
+      content: "";
+    }
+  }
+
+  .quote__plus-btn {
+    display: none;
+  }
+}
+
+.bx-controls-direction {
+  display: none;
+}
+
+.bx-wrapper {
+  margin-bottom: 40px;
 }

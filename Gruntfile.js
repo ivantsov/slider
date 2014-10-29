@@ -11,13 +11,13 @@ module.exports = function (grunt) {
             options: {
                 paths: ['./static/styles'],
                 sourceMap: true,
-                sourceMapFilename: './static/styles/main.css.map',
-                sourceMapURL: 'main.css.map'
+                sourceMapFilename: './static/styles/source.css.map',
+                sourceMapURL: 'source.css.map'
             },
             files: {
                 expand: true,
                 cwd: './static/styles',
-                src: ['main.less'],
+                src: ['*.less'],
                 dest: './static/styles',
                 ext: '.css'
             }
