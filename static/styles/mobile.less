@@ -1,26 +1,53 @@
+@import "mixins";
+@import "variables";
+
+.content-padding {
+  padding: 0 20px;
+}
+
 .about {
-  padding: 20px 20px 55px;
+  padding-top: 20px;
   text-align: left;
 
   &__title {
+    .content-padding;
     font-size: 2.1em;
     font-weight: normal;
   }
 
   &__subtitle {
+    .content-padding;
     font-size: 1.8em;
     font-weight: 300;
     margin-top: 20px;
   }
 
   &__describe {
+    .content-padding;
     font-size: 1.5em;
   }
+
+  &__polygon {
+    background-color: @dark_blue;
+    position: relative;
+    height: 138px;
+    z-index: 100;
+    overflow: hidden;
+    margin-top: 15px;
+
+    &:before, &:after {
+      display: none;
+    }
+  }
+}
+
+.quotes {
+  margin-top: -95px;
 }
 
 .quote {
   &__content {
-    padding: 0 20px;
+    .content-padding;
     text-align: left;
   }
 
@@ -32,7 +59,7 @@
   &__author {
     font-size: 1.3em;
     text-align: left;
-    padding: 0 20px;
+    .content-padding;
 
     &:before, &:after {
       content: "";
