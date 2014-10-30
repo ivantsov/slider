@@ -2,22 +2,22 @@
 @import "../bower_components/bxslider-4/jquery.bxslider.css";
 @font-face {
   font-family: 'ProximaNova';
-  src: url('/static/fonts/proximanova/bold/proximanova.woff') format('woff'), url('/static/fonts/proximanova/bold/proximanova.ttf') format('truetype');
+  src: url('static/fonts/proximanova/bold/proximanova.woff') format('woff'), url('static/fonts/proximanova/bold/proximanova.ttf') format('truetype');
   font-weight: bold;
 }
 @font-face {
   font-family: 'ProximaNova';
-  src: url('/static/fonts/proximanova/regular/proximanova.woff') format('woff'), url('/static/fonts/proximanova/regular/proximanova.ttf') format('truetype');
+  src: url('static/fonts/proximanova/regular/proximanova.woff') format('woff'), url('static/fonts/proximanova/regular/proximanova.ttf') format('truetype');
   font-weight: normal;
 }
 @font-face {
   font-family: 'ProximaNova';
-  src: url('/static/fonts/proximanova/light/proximanova.woff') format('woff'), url('/static/fonts/proximanova/light/proximanova.ttf') format('truetype');
+  src: url('static/fonts/proximanova/light/proximanova.woff') format('woff'), url('static/fonts/proximanova/light/proximanova.ttf') format('truetype');
   font-weight: 300;
 }
 @font-face {
   font-family: 'ProximaNova Semi';
-  src: url('/static/fonts/proximanova/semi-bold-italic/proximanova-semibold-webfont.ttf') format('truetype');
+  src: url('/static/fonts/proximanova/semi-bold-italic/proximanova.woff') format('woff'), url('/static/fonts/proximanova/semi-bold-italic/proximanova.ttf') format('truetype');
 }
 .center {
   margin: 0 auto;
