@@ -1,0 +1,64 @@
+.content-padding {
+  padding: 0 20px;
+}
+.about {
+  padding-top: 20px;
+  text-align: left;
+}
+.about__title {
+  padding: 0 20px;
+  font-size: 2.1em;
+  font-weight: normal;
+}
+.about__subtitle {
+  padding: 0 20px;
+  font-size: 1.8em;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.about__describe {
+  padding: 0 20px;
+  font-size: 1.5em;
+}
+.about__polygon {
+  background-color: #00618d;
+  position: relative;
+  height: 138px;
+  z-index: 100;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.about__polygon:before,
+.about__polygon:after {
+  display: none;
+}
+.quotes {
+  margin-top: -95px;
+}
+.quote__content {
+  padding: 0 20px;
+  text-align: left;
+}
+.quote__text {
+  padding: 20px 0 0;
+  font-size: 1.8em;
+}
+.quote__author {
+  font-size: 1.3em;
+  text-align: left;
+  padding: 0 20px;
+}
+.quote__author:before,
+.quote__author:after {
+  content: "";
+}
+.quote__plus-btn {
+  display: none;
+}
+.bx-controls-direction {
+  display: none;
+}
+.bx-wrapper {
+  margin-bottom: 40px;
+}
+/*# sourceMappingURL=source.css.map */

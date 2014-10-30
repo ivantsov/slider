@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Slider</title>
+
+    <link rel="stylesheet" href="/static/styles/main.css"/>
+    <link rel="stylesheet" href="/static/styles/mobile.css" media="(max-width: 480px)"/>
+</head>
+<body>
+<div class="container">
+    <div class="about">
+        <h1 class="about__title">Experience</h1>
+
+        <div class="about__subtitle-wrapper">
+            <p class="about__subtitle center">
+                This stuff has been specified in&nbsp;components on&nbsp;commercial and military aircraft for more than
+                25&nbsp;years
+            </p>
+        </div>
+
+        <p class="about__describe center">We&nbsp;know the best results come when we&nbsp;partner with manufacturers and
+            use our expertise to&nbsp;help take components and systems from inception to&nbsp;production and to&nbsp;market.
+        </p>
+
+        <div class="about__polygon">
+            <div class="about__polygon_center"></div>
+        </div>
+    </div>
+    <div class="quotes">
+        <ul class="slider">
+            <li>
+                <div class="quote">
+                    <div class="quote__image-container center">
+                        <div class="quote__image">
+                            <svg width="260" height="170">
+                                <clipPath id="clipPolygon">
+                                    <polygon points="130 0, 0 85, 130 170, 260 85"></polygon>
+                                </clipPath>
+                                <image xlink:href="/static/images/photo.jpg" width="260" height="170"
+                                       clip-path="url(#clipPolygon)"
+                                       preserveAspectRatio="xMidYMin slice"></image>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="quote__content center">
+                        <div class="quote__text">
+                            Donec sed odio dui. Maecenas faucibus mollis interdum. Sed posuere consectetur est at
+                            lobortis. Morbileo risus , porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.
+                        </div>
+                    </div>
+                    <div class="quote__plus-btn center"></div>
+                    <div class="quote__author">
+                        <span class="quote__author__name">John Smith,</span>
+                        <span class="quote__author__position"> Commercial Director, Boeing</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="quote">
+                    <div class="quote__image-container center">
+                        <div class="quote__image">
+                            <svg width="260" height="170">
+                                <clipPath id="clipPolygon">
+                                    <polygon points="130 0, 0 85, 130 170, 260 85"></polygon>
+                                </clipPath>
+                                <image xlink:href="/static/images/photo.jpg" width="260" height="170"
+                                       clip-path="url(#clipPolygon)"
+                                       preserveAspectRatio="xMidYMin slice"></image>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="quote__content center">
+                        <div class="quote__text">
+                            Donec sed odio dui. Maecenas faucibus mollis interdum. Sed posuere consectetur est at
+                            lobortis. Morbileo risus , porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.
+                        </div>
+                    </div>
+                    <div class="quote__plus-btn center"></div>
+                    <div class="quote__author">
+                        <span class="quote__author__name">John Smith,</span>
+                        <span class="quote__author__position"> Commercial Director, Boeing</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="quote">
+                    <div class="quote__image-container center">
+                        <div class="quote__image">
+                            <svg width="260" height="170">
+                                <clipPath id="clipPolygon">
+                                    <polygon points="130 0, 0 85, 130 170, 260 85"></polygon>
+                                </clipPath>
+                                <image xlink:href="/static/images/photo.jpg" width="260" height="170"
+                                       clip-path="url(#clipPolygon)"
+                                       preserveAspectRatio="xMidYMin slice"></image>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="quote__content center">
+                        <div class="quote__text">
+                            Donec sed odio dui. Maecenas faucibus mollis interdum. Sed posuere consectetur est at
+                            lobortis. Morbileo risus , porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.
+                        </div>
+                    </div>
+                    <div class="quote__plus-btn center"></div>
+                    <div class="quote__author">
+                        <span class="quote__author__name">John Smith,</span>
+                        <span class="quote__author__position"> Commercial Director, Boeing</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="/static/bower_components/jquery/dist/jquery.js"></script>
+<script src="/static/bower_components/bxslider-4/jquery.bxslider.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.slider').bxSlider({
+            adaptiveHeight: true
+        });
+    });
+</script>
+</body>
+</html>
