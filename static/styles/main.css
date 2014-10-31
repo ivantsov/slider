@@ -162,10 +162,9 @@
   float: right;
 }
 .quote__text {
-  padding: 0 45px 0 35px;
+  padding: 0 40px 0 35px;
   clear: both;
   font-size: 2.4em;
-  font-style: italic;
   position: relative;
 }
 .quote__text:before,
@@ -179,11 +178,11 @@
 }
 .quote__text:before {
   background: url('../images/quote-left.svg') no-repeat;
-  left: 0;
+  left: -10px;
 }
 .quote__text:after {
   background: url('../images/quote-right.svg') no-repeat;
-  right: 0;
+  right: -5px;
 }
 .quote__plus-btn {
   background: url('../images/plus-btn.svg') no-repeat;

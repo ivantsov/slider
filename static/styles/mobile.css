@@ -43,6 +43,12 @@
   padding: 20px 0 0;
   font-size: 1.8em;
 }
+.quote__text:before {
+  left: 0;
+}
+.quote__text:after {
+  right: 0;
+}
 .quote__author {
   font-size: 1.3em;
   text-align: left;
