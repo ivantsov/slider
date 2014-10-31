@@ -98,8 +98,8 @@
       background-color: @dark_blue;
       position: absolute;
       top: 5px;
-      right: 0;
-      width: 100%;
+      right: -5px;
+      width: 105%;
       height: 125px;
       .transform(rotate(2deg));
     }
@@ -190,10 +190,9 @@
   }
 
   &__text {
-    padding: 0 45px 0 35px;
+    padding: 0 40px 0 35px;
     clear: both;
     font-size: 2.4em;
-    font-style: italic;
     position: relative;
 
     &:before, &:after {
@@ -207,12 +206,12 @@
 
     &:before {
       background: url('../images/quote-left.svg') no-repeat;
-      left: 0;
+      left: -10px;
     }
 
     &:after {
       background: url('../images/quote-right.svg') no-repeat;
-      right: 0;
+      right: -5px;
     }
   }
 
