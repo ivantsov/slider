@@ -5,7 +5,7 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "normalize.css": "~3.0.2",
-    "bxslider-4": "~4.1.2"
+    "fotorama": "~4.6.2"
   },
   "devDependencies": {}
 }

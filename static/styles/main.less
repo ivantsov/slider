@@ -1,5 +1,5 @@
 @import "../bower_components/normalize.css/normalize.css";
-@import "../bower_components/bxslider-4/jquery.bxslider.css";
+@import "../bower_components/fotorama/fotorama.css";
 @import "variables";
 @import "mixins";
 
@@ -66,8 +66,8 @@
     position: relative;
     height: 180px;
     z-index: 100;
-    overflow: hidden;
     margin-top: 35px;
+    overflow-x: hidden;
 
     &_center {
       position: absolute;
@@ -82,10 +82,13 @@
       border-bottom: 100px solid @blue;
     }
 
-    &:before {
+    &:before, &:after {
       content: "";
       background-color: @dark_blue;
       position: absolute;
+    }
+
+    &:before {
       top: 30px;
       left: -5px;
       width: 20%;
@@ -94,12 +97,9 @@
     }
 
     &:after {
-      content: "";
-      background-color: @dark_blue;
-      position: absolute;
       top: 5px;
       right: -5px;
-      width: 105%;
+      width: 101%;
       height: 125px;
       .transform(rotate(2deg));
     }
@@ -112,51 +112,12 @@
   text-align: center;
   position: relative;
   padding-bottom: 10px;
-  margin-top: -140px;
+  margin-top: -130px;
 
   &__header-bg {
     background-color: @dark_blue;
     height: 85px;
     margin-top: 0;
-  }
-
-  .bx-wrapper {
-    .bx-viewport {
-      border: none;
-      background: none;
-      .box-shadow(none);
-      left: 0;
-      z-index: 1000;
-    }
-
-    .bx-pager, .bx-controls-auto {
-      bottom: -10px;
-    }
-
-    .bx-pager.bx-default-pager {
-      a {
-        background-color: @dark_blue;
-
-        &.active {
-          background-color: @white;
-        }
-      }
-    }
-
-    .bx-prev, .bx-next {
-      width: 75px;
-      height: 100px;
-    }
-
-    .bx-prev {
-      left: 0;
-      background: url('../images/arrow-left.svg') no-repeat;
-    }
-
-    .bx-next {
-      right: 0;
-      background: url('../images/arrow-right.svg') no-repeat;
-    }
   }
 }
 
@@ -236,6 +197,44 @@
 
     &__position {
       font-family: 'ProximaNova';
+    }
+  }
+}
+
+.fotorama {
+  &__wrap {
+    z-index: 2000;
+  }
+
+  &__wrap--only-active &__stage__frame {
+    visibility: visible;
+  }
+
+  &__dot {
+    border: 3px solid @dark_blue;
+    background-color: @dark_blue;
+  }
+
+  &__nav__frame&__active &__dot {
+    border: 5px solid @white;
+  }
+
+  &__nav-wrap {
+    margin: 15px 0;
+  }
+
+  &__arr {
+    width: 75px;
+    height: 100px;
+
+    &--prev {
+      left: 0;
+      background: url('../images/arrow-left.svg') no-repeat;
+    }
+
+    &--next {
+      right: 0;
+      background: url('../images/arrow-right.svg') no-repeat;
     }
   }
 }
