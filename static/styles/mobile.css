@@ -33,7 +33,7 @@
   display: none;
 }
 .quotes {
-  margin-top: -95px;
+  margin-top: -85px;
 }
 .quote__content {
   padding: 0 20px;
@@ -43,10 +43,10 @@
   padding: 20px 0 0;
   font-size: 1.8em;
 }
-.quote__text:before {
+.quote:before {
   left: 0;
 }
-.quote__text:after {
+.quote:after {
   right: 0;
 }
 .quote__author {
@@ -61,10 +61,7 @@
 .quote__plus-btn {
   display: none;
 }
-.bx-controls-direction {
-  display: none;
-}
-.bx-wrapper {
-  margin-bottom: 40px;
+.fotorama__arr {
+  display: none !important;
 }
 /*# sourceMappingURL=source.css.map */
